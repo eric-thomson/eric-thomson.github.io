@@ -1,6 +1,28 @@
-# Getting Started with Create React App
+# Chameleon Budget
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p>This is a budget app to help track person finances. What does the chameleon have to do with it? Nothing! I just think they're kind of cool and am naming the app after them.</p>
+
+## Purpose (My purpose, not the app)
+
+I've always been taught to keep a budget and track my finances. However, I've never found a method I love. Hence, I'm building my own right now.
+
+## App Inspiration
+I started creating this app using and AI (lovable.dev) however, I learned that if I want to build this an understand it, I better start it myself.
+My design inspiration mimics the AI generated app, however, I started from scratch to learn and expand my knowledge of React and material UI
+
+## Current Status
+
+<p>Currently setting up the basic user interface and layout for the application. Right now, just the Dashboard is up to date.</p>
+
+## Future Features
+
+<ul>
+    <li>Budget Page that allows you to create a budget, add categories and spending limits, and look at previous months</li>
+    <li>Expenses Page will allow you to add new expenses. It will track the payee, what account the money came from, and allow you to add details regarding the transaction</li>
+    <li>Income Page will allow you to track your income. When creating your budget, income from the previous month with be used to allocate money for the next</li>
+    <li>Add an accounts page. This will allow you to set up your bank accounts. When you have an expense, you will be able to mark which account the money came from</li>
+    <li>A profile page to manage your profile and also create custom settings for your app (like default budget fields)</li>
+</ul>
 
 ## Available Scripts
 
@@ -14,11 +36,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
@@ -26,45 +43,3 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
