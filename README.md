@@ -1,11 +1,9 @@
-# Portfolio
-
-## Responsive Web Design Certification.
+# Project Portfolio
 
 This is a repository showcasing my skillset in various aspects of web development.
 While I already have a professional background in web development, I want to stay sharp and improve my skill set.
 
-Below, I have listed projects (prompts and requirements provided by FreeCodeCamp) to practice the skill learned while earning certifications.
+Below, I have listed projects (prompts and requirements provided by FreeCodeCamp) to practice the skills learned while earning certifications.
 
 ## JavaScript Algorithms and Data Structures Certification Projects
 
