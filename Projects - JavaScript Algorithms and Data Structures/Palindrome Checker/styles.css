@@ -1,0 +1,73 @@
+:root {
+    --primary: rgb(23, 76, 129);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg,var(--primary), white);
+    color: white;
+}
+
+#checker {
+    text-align: center;
+    width: 600px;
+    height: 300px;
+
+}
+
+#checker header {
+    padding: 20px;
+}
+
+.input-card p{
+    padding-bottom: 16px;
+    padding-top: 16px;
+    color: black;
+    font-size: 1.3rem;
+}
+
+.input-card input {
+    margin-top: 5%;
+}
+
+
+.input-card {
+    border: 2px solid white;
+    border-radius: 16px;
+    height: 200px;
+    background: linear-gradient( white, rgb(228, 228, 228));
+}
+
+#text-input:active {
+    border: 1px solid var(--primary);
+}
+
+#text-input {
+    height: 2rem;
+    width: 60%;
+    font-size: 1.1rem;
+}
+
+#check-btn {
+    height: 2rem;
+    
+    width: 5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--primary);
+    color: white;
+}
+
+#check-btn:hover {
+    background-color: rgb(44, 102, 161);
+}

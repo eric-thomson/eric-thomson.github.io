@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    background-color: #125568;
+    color: #f5f6f7;
+  }
+  
+  #title {
+    font-family: Tahoma;
+    text-align: center;
+  }
+  
+  #description {
+    text-align: center;
+    font-size: 1.1rem;
+    font-style: italic;
+  }
+  
+  form {
+    width: 70vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: auto;
+  }
+  
+  input[type='submit'] {
+    display: block;
+    width: 70vw;
+    margin: 1em auto;
+    height: 2em;
+    max-width: 500px;
+  }
+  
+  fieldset {
+    display: block;
+  }
+  
+  label {
+    display: block;
+  }
+  
+  input,
+  textarea,
+  select {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .inline {
+    width: unset;
+    margin: 0 .5em 0 0;
+  }
+  

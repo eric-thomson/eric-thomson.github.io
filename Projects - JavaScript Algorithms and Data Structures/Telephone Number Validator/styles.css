@@ -1,0 +1,61 @@
+
+body {
+    display: flex;
+}
+
+
+.inputs {
+    background-color: rgba(122, 122, 122, 0.692);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    border: 1px solid black;
+}
+
+#instructions {
+    text-align: center;
+}
+
+#user-input, #check-btn, #clear-btn, #instructions {
+    width: 100%;
+}
+
+#user-input {
+    margin: 10px;
+}
+
+
+#phone-btns {
+    width: 300px;
+    height: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+    text-align: center;
+    
+}
+.phone-btn:hover {
+    background-color: rgb(48, 87, 138) !important;
+    color: white;
+}
+
+.phone-btn {
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+    background-color: rgb(138, 185, 247);
+    color: rgb(255, 255, 255);
+}
+
+
+
+#results-div {
+    height: 2rem;
+    width: 100%;
+    text-align: center;
+}

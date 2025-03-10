@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Arduino Functions</title>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta name='description' content='Arduino Functions'>
+    <link rel='stylesheet' href='styles.css'>
+  </head>
+  <body>
+    <aside class='sidebar'>
+      <nav id="navbar">
+        <header>
+          <h3 class="nav-bar-header large bold'">Arduino Functions</h3>
+        </header>
+        <ul class="nav-list">
+          <li class="nav-btns"><a class='nav-link' href='#digital-io'>Digital IO</a></li>
+          <li class="nav-btns"><a class='nav-link' href='#analog-io'>Analog IO</a></li>
+          <li class="nav-btns"><a class='nav-link' href='#advanced-io'>Advanced IO</a></li>
+          <li class="nav-btns"><a class='nav-link' href='#trigonometry'>Trigonometry</a></li>
+          <li class="nav-btns"><a class='nav-link' href='#random_numbers'>Random Numbers</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main id="main-doc">
+      <section id='digital-io' class='main-section'>
+        <header>
+          <h3>Digital IO</h3>
+        </header>
+        <table class="function-table">
+          <thead class="function-table-header">
+            <tr>
+              <th>Method & Parameters</th>
+              <th>Description</th>
+              <th>Returns</th>
+            <tr>
+          </thead>
+          <tbody class="'function-table-body">
+            <tr>
+              <td>
+                <code class='code'><span class='data-type'>int</span> <span class='function-name'>digitalRead</span>(<span class='data-type'>int</span> pin)</code></td>
+              <td>
+                <p>Reads the state of a digital pin.</p>
+              </td>
+              <td><code class='code'><span class='data-type'>int</span></code></td>
+            </tr>
+            <tr>
+              <td>
+                <code class='code'><span class='data-type'>void</span> <span class='function-name'>digitalWrite</span>(<span class='data-type'>int</span> pin, <span class='data-type'>int</span> state</span>)</code></td>
+              <td>
+                <p>Writes a state to a digital pin.</p>
+              </td>
+              <td>Nothing</td>
+            </tr>
+            <tr>
+              <td>
+                <code class='code'><span class='data-type'>void</span> <span class='function-name'>pinMode</span>(<span class='data-type'>int</span> pin)</code>*</td>
+              <td>
+                <p>Define the mode of a pin.</p>
+              </td>
+              <td>Nothing</td>
+            </tr>
+          </tbody>
+        </table>
+        <section class='notes'>
+          <p>*Available modes are:</p>
+          <ul class="notes-list">
+            <li><code class='code'>INPUT</code> (0)</li>
+            <li><code class='code'>OUTPUT</code> (1)</li>
+            <li><code class='code'>INPUT_PULLUP</code> (2)</li>
+            <li><code class='code'>INPUT_PULLDOWN</code> (3)</li>
+            <li><code class='code'>OUTPUT_OPENDRAIN</code> (4)</li>
+          </ul>
+        </section>
+      </section>
+      <section id='analog-io' class='main-section'>
+        <header>
+          <h3>Analog IO</h3>
+        </header>
+        <table class="function-table">
+          <thead class="function-table-header">
+            <tr>
+              <th>Method & Parameters</th>
+              <th>Description</th>
+              <th>Returns</th>
+            <tr>
+          </thead>
+          <tbody class="'function-table-body">
+            <tr>
+              <td>
+                <code class='code'><span class='data-type'>int</span> <span class='function-name'>analogRead</span>(<span class='data-type'>int</span> pin)</code></td>
+              <td>
+                <p>Reads the value of an analog pin in a 10-bit resolution (0-1023).*</p>
+              </td>
+              <td><code class='code'><span class='data-type'>int</span></code></td>
+            </tr>
+            <tr>
+              <td>
+                <code class='code'><span class='data-type'>void</span> <span class='function-name'>analogReadResolution</span>(<span class='data-type'>int</span> resolution)</code></td>
+              <td>
+                <p>Sets ADC read resolution in bits.</p>
+              </td>
+              <td>Nothing</td>
+            </tr>
+            <tr>
+              <td>
+                <code class='code'><span class='data-type'>void</span> <span class='function-name'>analogReference</span>(<span class='data-type'>int</span> reference)</code></td>
+              <td>
+                <p>Changes the voltage reference for a board.**</p>
+              </td>
+              <td>Nothing</td>
+            </tr>
+            <tr>
+              <td>
+                <code class='code'><span class='data-type'>void</span> <span class='function-name'>analogWrite</span>(<span class='data-type'>int</span> pin, <span class='data-type'>int</span> value)</code></td>
+              <td>
+                <p>Writes a value to a PWM supported pin in a 8-bit resolution (0-255).**</p>
+              </td>
+              <td>Nothing</td>
+            </tr>
+            <tr>
+              <td>
+                <code class='code'><span class='data-type'>void</span> <span class='function-name'>analogWriteResolution</span>(<span class='data-type'>int</span> resolution)</code></td>
+              <td>
+                <p>Sets write resolution for a board.</p>
+              </td>
+              <td>Nothing</td>
+            </tr>
+          </tbody>
+        </table>
+        <section class='notes'>
+          <ul class="notes-list">
+            <li>*The value range changes based on the resolution. 0-1023 is 10-bit resolution, 0-4096 is 12-bit and so on.</li>
+            <li>**Each board/architecture has a set of different reference voltages available.</li>
+            <li>***The value range changes based on the resolution. 0-255 is default (8-bit).</li>
+          </ul>
+        </section>
+      </section>
+      <section id='advanced-io' class='main-section'>
+        <header>
+          <h3>Advanced IO</h3>
+        </header>
+        <table class="function-table">
+          <thead class="function-table-header">
+            <tr>
+              <th>Method & Parameters</th>
+              <th>Description</th>
+              <th>Returns</th>
+            <tr>
+          </thead>
+          <tbody class="'function-table-body">
+            <tr>
+              <td>
+                <code class='code'><span class='data-type'>void</span> <span class='function-name'>tone</span>(<span class='data-type'>int</span> pin, <span class='data-type'>int</span> frequency, <span class='data-type'>long</span> duration)</code></td>
+              <td>
+                <p>Generates a square wave on specified pin, with 50% duty cycle.</p>
+              </td>
+              <td>Nothing</td>
+            </tr>
+            <tr>
+              <td>
+                <code class='code'><span class='data-type'>void</span> <span class='function-name'>analogReadResolution</span>(<span class='data-type'>int</span> resolution)</code></td>
+              <td>
+                <p>Stops generation of square wave on the specified pin.</p>
+              </td>
+              <td>Nothing</td>
+            </tr>
+            <tr>
+              <td>
+                <code class='code'><span class='data-type'>long</span> <span class='function-name'>pulseIn</span>(<span class='data-type'>int</span> pin, <span class='data-type'>int</span> state, <span class='data-type'>long</span> timeout)</code></td>
+              <td>
+                <p>Reads a pulse (either HIGH or LOW) on a pin and returns the length of the pulse (in microseconds)</p>
+              </td>
+              <td><code class='code'><span class='data-type'>long</span></code></td>
+            </tr>
+            <tr>
+              <td>
+                <code class='code'><span class='data-type'>long</span> <span class='function-name'>pulseInLong</span>(<span class='data-type'>int</span> pin, <span class='data-type'>int</span> state, <span class='data-type'>long</span> timeout)</code></td>
+              <td>
+                <p>Returns the length of the pulse (in microseconds)</p>
+              </td>
+              <td><code class='code'><span class='data-type'>long</span></code></td>
+            </tr>
+            <tr>
+              <td>
+                <code class='code'><span class='data-type'>int</span> <span class='function-name'>shiftIn</span>(<span class='data-type'>int</span> pin, <span class='data-type'>int</span> clockPin, <span class='data-type'>int</span> bitOrder)</code>*</td>
+              <td>
+                <p>Shifts in a byte of data one bit at a time, and returns the value of the bit read.</p>
+              </td>
+              <td><code class="code"><span class="data-type">byte</span></code></td>
+            </tr>
+            <tr>
+              <td>
+                <code class='code'><span class='data-type'>int</span> <span class='function-name'>shiftOut</span>(<span class='data-type'>int</span> pin, <span class='data-type'>int</span> clockPin, <span class='data-type'>int</span> bitOrder, <span class='data-type'>byte</span> value)</code>**</td>
+              <td>
+                <p>Shifts out a byte of data one bit at a time.</p>
+              </td>
+              <td>Nothing</td>
+            </tr>
+          </tbody>
+        </table>
+        <section class='notes'>
+          <ul class="notes-list">
+            <li>*The <code class="code">parameter</code> is either <code class="code">MSBFIRST</code> (<code class="code">1</code>) or <code class="code">LSBFIRST</code> (<code class="code">0</code>) (most / least significant bits).</li>
+            <li>**The pin used for <code class="code">shiftOut()</code> needs to be configured as an <code class="code">OUTPUT</code>, using <code class="code">pinMode()</code></li>
+          </ul>
+        </section>
+      </section>
+      <section id='trigonometry' class='main-section'>
+        <header>
+          <h3>Trigonometry</h3>
+        </header>
+        <table class="function-table">
+          <thead class="function-table-header">
+            <tr>
+              <th>Method & Parameters</th>
+              <th>Description</th>
+              <th>Returns</th>
+            <tr>
+          </thead>
+          <tbody class="'function-table-body">
+            <tr>
+              <td>
+                <code class='code'><span class='data-type'>double</span> <span class='function-name'> cos</span>(<span class='data-type'>double</span> angle)</code></td>
+              <td>
+                <p>Calculates the cosine of an angle in radians.</p>
+              </td>
+              <td><code class='code'><span class='data-type'>double</span></code></td>
+            </tr>
+            <tr>
+              <td>
+                <code class='code'><span class='data-type'>double</span> <span class='function-name'> sin</span>(<span class='data-type'>double</span> angle)</code></td>
+              <td>
+                <p>Calculates the sine of an angle in radians.</p>
+              </td>
+              <td><code class='code'><span class='data-type'>double</span></code></td>
+            </tr>
+            <tr>
+              <td>
+                <code class='code'><span class='data-type'>double</span> <span class='function-name'> tan</span>(<span class='data-type'>double</span> angle)</code></td>
+              <td>
+                <p>Calculates the tangent of an angle in radians.</p>
+              </td>
+              <td><code class='code'><span class='data-type'>double</span></code></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id='random_numbers' class='main-section'>
+        <header>
+          <h3>Random Numbers</h3>
+        </header>
+        <table class="function-table">
+          <thead class="function-table-header">
+            <tr>
+              <th>Method & Parameters</th>
+              <th>Description</th>
+              <th>Returns</th>
+            <tr>
+          </thead>
+          <tbody class="'function-table-body">
+            <tr>
+              <td>
+                <code class='code'><span class='data-type'>int</span> <span class='function-name'>random</span>()</code></td>
+              <td>
+                <p>Generates a pseudo-random number between 0 and RAND_MAX</p>
+              </td>
+              <td><code class='code'><span class='data-type'>int</span></code></td>
+            </tr>
+            <tr>
+              <td>
+                <code class='code'><span class='data-type'>void</span> <span class='function-name'>randomSeed</span>(unsigned <span class='data-type'>long</span> seed)</code></td>
+              <td>
+                <p>Seeds the random number generator.</p>
+              </td>
+              <td>Nothing</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <p>Source: <a href='https://docs.arduino.cc/learn/programming/reference/'>Arduino Docs</a></p>
+    </main>
+    <footer class="footer">
+      
+    </footer>
+  </body>
+</html>

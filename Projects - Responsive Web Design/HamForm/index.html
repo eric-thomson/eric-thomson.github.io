@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Hamburgers</title>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' href="styles.css">
+  </head>
+  <body>
+    <h1 id='title'>Hamburgers</h1>
+    <p id='description'>Give us input on your favorite hamburger</p>
+
+    <form id='survey-form' action='https://register-demo.freecodecamp.org' method="post">
+      <fieldset>
+        <label id='name-label' for='name'>Enter your name: <input id='name' type='text' required placeholder="John Doe" name="name'"></label>
+        <label id='email-label' for='email'>Enter your email: <input id='email' type='email' required placeholder='email@gmail.com' name="email"></label>
+        <label id='number-label' for='number'>Enter your number: <input id='number' placeholder='1234567888' type='number' min='1000000000' max='9999999999' name="number"></label>
+      </fieldset>
+      <fieldset>
+        <legend>Best Hamburger</legend>
+        <label for='dropdown'>Select Best Hamburger
+          <select id='dropdown'>
+            <option value=''>choose best</option>
+            <option value='1'>Red Robin</option>
+            <option value='2'>Dairy Queen</option>
+            <option value='3'>7 Brothers</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset id='toppings'>
+          <legend>Great Toppings</legend>
+          <label for='t1'><input class='inline' id='t1' type='checkbox' value='1' name='t1'>Lettus</label>
+          <label for='t2'><input class='inline' id='t2' type='checkbox' value='2' name='t2'>Tomato</label>
+          <label for='t3'><input class='inline' id='t3' type='checkbox' value='3' name='t3'>Onion</label>
+          <label for='t4'><input class='inline' id='t4' type='checkbox' value='4' name='t4'>Cheese</label>
+        </fieldset>
+      <fieldset>
+        <legend>Best Hamburger Sauce</legend>
+        <label for='scorpion-sauce'><input class='inline' id='scorpion-sauce' type='radio' name='sauces' value='1'>Scorpion Sauce</label>
+        <label for='barbeque-sauce'><input class='inline' id='barbeque-sauce' type='radio' name='sauces' value='2'>Barbeque Sauce</label>
+        <label for='polynesian-sauce'><input class='inline' id='polynesian-sauce' type='radio' name='sauces' value='3'>Polynesian Sauce</label>
+      </fieldset>
+      <fieldset>
+        <label for='comments'>
+          <textarea id='comments' rows=4 cols=35 placeholder='Tell us anything else about hamburgers...'></textarea>
+      </fieldset>
+      <input id='submit' type='submit'>
+    </form>
+  </body>
+</html>

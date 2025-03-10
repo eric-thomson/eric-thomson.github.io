@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pokemon Search App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An app to search pokemon and display their stats">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="container">
+      <div class="search">
+        <p>Search for pokemon by name or ID#</p>
+        <input id="search-input" type="text" name="search-input" required>
+        <button id="search-button">SEARCH</button>
+      </div>
+      <div class="pokemon-card">
+        <div class="pokemon-img-div">
+          <figure>
+            <img id="sprite" src="">
+          </figure>
+        </div>
+        <div class="pokemon-stats">
+          <div>
+            <span>Name</span>
+            <span id="pokemon-name"></span>
+          </div>
+          <div>
+            <span>ID</span>
+            <span id="pokemon-id"></span>
+          </div>
+          <div>
+            <span>Weight</span>
+            <span id="weight"></span>
+          </div>
+          <div>
+            <span>Height</span>
+            <span id="height"></span>
+          </div>
+          <div>
+            <span>Types</span>
+            <span id="types"></span>
+          </div>
+          <div>
+            <span>HP</span>
+            <span id="hp"></span>
+          </div>
+          <div>
+            <span>Attack</span>
+            <span id="attack"></span>
+          </div>
+          <div>
+            <span>Defense</span>
+            <span id="defense"></span>
+          </div>
+          <div>
+            <span>Special Attack</span>
+            <span id="special-attack"></span>
+          </div>
+          <div>
+            <span>Special Defense</span>
+            <span id="special-defense"></span>
+          </div>
+          <div>
+            <span>Speed</span>
+            <span id="speed"></span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
